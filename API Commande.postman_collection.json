@@ -1,0 +1,839 @@
+{
+	"info": {
+		"_postman_id": "afe81844-50f5-45c6-b806-121787b952ff",
+		"name": "API Commande",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33724195",
+		"_collection_link": "https://mspr11.postman.co/workspace/MSPR-Workspace~2db31c72-bd08-42e2-8b8d-58028b196f09/collection/33724195-afe81844-50f5-45c6-b806-121787b952ff?action=share&source=collection_link&creator=33724195"
+	},
+	"item": [
+		{
+			"name": "commande",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "omzRfFaKaZsI1LkziC8co7dMEb9cKgzBvJbOfrHkv0KDcXQGfMZj1iFHeLRmoXPD"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande interdit",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "omzRfFaKaZsI1LkziC8co7dMEb9cKgzBvJbOfrHkv0KDcXQGfMZj1iFHeLRmoXPD"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/id inexistant",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "omzRfFaKaZsI1LkziC8co7dMEb9cKgzBvJbOfrHkv0KDcXQGfMZj1iFHeLRmoXPD"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/999",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/id interdit",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "omzRfFaKaZsI1LkziC8co7dMEb9cKgzBvJbOfrHkv0KDcXQGfMZj1iFHeLRmoXPD"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "vyS2L3ieJBe4hI5k5CQZ1JGY3OqUl7G8suTvtJAxvuYDaX85y0d9e9UzW7wQsUeE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ClientID\": 6,\r\n    \"DateCommande\": \"2024-05-24\",\r\n    \"Statut\": \"En cours\",\r\n    \"PrixTotal\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande interdit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ClientID\": 6,\r\n    \"DateCommande\": \"2024-05-24\",\r\n    \"Statut\": \"En cours\",\r\n    \"PrixTotal\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande incomplet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "vyS2L3ieJBe4hI5k5CQZ1JGY3OqUl7G8suTvtJAxvuYDaX85y0d9e9UzW7wQsUeE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ClientID\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/detail",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "vyS2L3ieJBe4hI5k5CQZ1JGY3OqUl7G8suTvtJAxvuYDaX85y0d9e9UzW7wQsUeE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CommandeID\": 9,\r\n    \"ProduitID\": 8,\r\n    \"Quantite\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/detail",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/detail interdit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CommandeID\": 9,\r\n    \"ProduitID\": 8,\r\n    \"Quantite\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/detail",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/detail incomplet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "vyS2L3ieJBe4hI5k5CQZ1JGY3OqUl7G8suTvtJAxvuYDaX85y0d9e9UzW7wQsUeE"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CommandeID\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/detail",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "A6s4kRxuawKMrXzKe9Y6drksvDXLAcOc6GISk7v8RDlPM8VLxqYSBAQrWfQkzm44"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ClientID\": 6,\r\n    \"DateCommande\": \"2024-06-24\",\r\n    \"Statut\": \"En cours new\",\r\n    \"PrixTotal\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/id interdit",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ClientID\": 6,\r\n    \"DateCommande\": \"2024-06-24\",\r\n    \"Statut\": \"En cours new\",\r\n    \"PrixTotal\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/id incomplet",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "A6s4kRxuawKMrXzKe9Y6drksvDXLAcOc6GISk7v8RDlPM8VLxqYSBAQrWfQkzm44"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ClientID\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/id inexistant",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "A6s4kRxuawKMrXzKe9Y6drksvDXLAcOc6GISk7v8RDlPM8VLxqYSBAQrWfQkzm44"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ClientID\": 6,\r\n    \"DateCommande\": \"2024-06-24\",\r\n    \"Statut\": \"En cours new\",\r\n    \"PrixTotal\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/999",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/detail",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "A6s4kRxuawKMrXzKe9Y6drksvDXLAcOc6GISk7v8RDlPM8VLxqYSBAQrWfQkzm44"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CommandeID\": 9,\r\n    \"ProduitID\": 8,\r\n    \"Quantite\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/detail/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"detail",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/detail interdit",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CommandeID\": 9,\r\n    \"ProduitID\": 8,\r\n    \"Quantite\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/detail/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"detail",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/detail incomplet",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "A6s4kRxuawKMrXzKe9Y6drksvDXLAcOc6GISk7v8RDlPM8VLxqYSBAQrWfQkzm44"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CommandeID\": 9\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/detail/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"detail",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/detail inexistant",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "A6s4kRxuawKMrXzKe9Y6drksvDXLAcOc6GISk7v8RDlPM8VLxqYSBAQrWfQkzm44"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"CommandeID\": 9,\r\n    \"ProduitID\": 8,\r\n    \"Quantite\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/detail/999",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"detail",
+						"999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "keFcYRLjAS4Tq6hEp4JFPkGR1d0IHJd58Xe2mvkz2gidmRg4v5B0QWhbAVlJ4Kts"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/id interdit",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/id inexistant",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "keFcYRLjAS4Tq6hEp4JFPkGR1d0IHJd58Xe2mvkz2gidmRg4v5B0QWhbAVlJ4Kts"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/999",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/detail",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "keFcYRLjAS4Tq6hEp4JFPkGR1d0IHJd58Xe2mvkz2gidmRg4v5B0QWhbAVlJ4Kts"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/detail/19",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"detail",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/detail interdit",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "keFcYRLjAS4Tq6hEp4JFPkGR1d0IHJd58Xe2mvkz2gidmRg4v5B0QWhbAVlJ4Kts"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/detail/19",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"detail",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commande/detail inexistant",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "keFcYRLjAS4Tq6hEp4JFPkGR1d0IHJd58Xe2mvkz2gidmRg4v5B0QWhbAVlJ4Kts"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:5002/commande/detail/999",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5002",
+					"path": [
+						"commande",
+						"detail",
+						"999"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
